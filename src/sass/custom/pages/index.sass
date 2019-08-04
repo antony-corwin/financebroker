@@ -1,0 +1,348 @@
+//.index
+
+.main
+    height: 100vh   
+    background-image: url(../../../img/pages/example/bg-main.png)
+    background-size: cover
+    background-position: center
+    padding-top: 280px
+    position: relative
+    &-content
+        max-width: 471px
+        float: right
+        h1
+            font-size: 45px
+            color: #fff
+            margin-bottom: 40px
+    &-info
+        position: absolute
+        bottom: 20px
+        width: 100%
+        ul
+            display: flex
+            margin-bottom: 30px
+        .description
+            
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            color: #fff
+        &__item
+            display: flex
+            align-items: center
+            position: relative
+            padding-left: 89px
+            padding-top: 20px
+            padding-bottom: 20px
+            svg
+                display: inline-block
+                position: absolute
+                left: 0
+                width: 79px
+                height: 79px
+                border-radius: 50%
+            span
+                font-family: Montserrat
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                text-transform: uppercase
+                color: #fff
+            &:hover
+                svg 
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+.steps
+    .swiper-slide
+        height: 504px
+        // width: 90%
+        padding-top: 60px
+        width: calc(100% - 200px)
+        padding-left: 100px
+        .image 
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            position: absolute
+            z-index: -1
+            background-size: cover
+            // background-repeat: no-repeat
+    .container
+        span
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 600
+            font-size: 40px
+            color: #fff
+        p
+            margin-top: 15px
+            width: 436px
+            font-family: Montserrat
+            font-style: normal
+            font-weight: normal
+            font-size: 40px 
+            color: #fff
+    .swiper-pagination
+        @include vwplusem('max-width', 1155)
+        margin: 0 auto
+        left: 0
+        right: 0
+        text-align: left
+        &-bullet
+            background: transparent
+            opacity: 1
+            border: 1px solid #fff
+            &-active
+                background: #fff
+            &:first-child
+                margin-left: 0
+.partners
+    padding-top: 150px
+    padding-bottom: 150px
+    .container
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+    &-info
+        width: 473px
+        h2
+            color: #485055
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 500
+            font-size: 40px
+        p
+            padding-top: 24px
+            font-family: Montserrat
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            color: #485055
+    &-logos
+        width: 623px
+        &__item
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 50px
+            &:last-child
+                margin-bottom: 0
+.terms
+    .container
+        display: flex
+        justify-content: space-between
+        margin-top: 150px
+        margin-bottom: 150px
+    &-info
+        width: 352px
+        h2
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 500
+            font-size: 40px
+            color: #485055  
+    &-description
+        width: 632px
+        &-row
+            display: flex
+        &-col
+            &:first-child
+                margin-right: 74px
+            span
+                display: inline-block
+                font-family: Montserrat
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                color: #485055  
+                margin-bottom: 16px
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: 8px
+            svg
+                margin-right: 10px
+            li
+                display: inline-block    
+                font-family: Montserrat
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                color: #485055
+            .bold
+                margin-left: 5px
+                font-family: Montserrat
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                color: #485055
+.capabilities
+    padding-top: 150px
+    padding-bottom: 150px
+    background-color: #fff
+    .container
+        display: flex
+        justify-content: space-between
+    &-info
+        width: 320px
+        h2
+            color: #485055
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 500
+            font-size: 40px
+        p
+            color: #485055
+            font-family: Montserrat
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            margin-top: 24px
+            margin-bottom: 40px
+    &-description
+        width: 632px
+        &__row
+            display: flex
+            justify-content: space-between
+            &:last-child
+                .capabilities-description__item
+                    margin-bottom: 0
+        &__item
+            width: 232px
+            margin-bottom: 65px
+            span
+                display: block
+                color: #485055
+                font-family: Montserrat
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                margin-top: 32px
+                margin-bottom: 8px
+            p
+                color: #485055
+                font-family: Montserrat
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+.example
+    .container
+        display: flex
+    &-info
+        width: 496px
+        margin-right: 32px
+        h2 
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 500
+            font-size: 40px
+            color: #485055
+    &-description
+        width: 627px
+        &-container
+            display: flex
+            flex-direction: row
+            position: relative
+        &__col
+            span
+                margin-bottom: 18px    
+                display: block
+                width: 274px
+                font-family: Montserrat
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                color: #485055
+            span.bold
+                font-family: Montserrat
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                color: #485055
+                &__big
+                    margin-bottom: 50px 
+                    font-family: Montserrat
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 26px
+                    color: #485055
+                &__green
+                    margin-bottom: 50px 
+                    font-family: Montserrat
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 26px
+                    color: #009c93
+            &:first-child
+                margin-right: 86px
+        .line
+            top: 75px
+            position: absolute
+            display: block
+            width: 625px
+            height: 1px
+            background-color: #C7CDD0
+
+        &__item
+            display: inline-block
+            p
+                margin-bottom: 30px
+                font-family: Montserrat
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                color: #485055
+            span.bold
+                font-family: Montserrat
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                color: #485055
+.licenses
+    margin-top: 150px
+    margin-bottom: 150px
+    h2
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 500
+        font-size: 40px
+        color: #485055
+    &-wrap
+        padding-left: 65px
+        padding-right: 65px
+        position: relative
+        margin-top: 48px
+    .swiper-container
+        .swiper-wrapper
+            display: flex
+            .swiper-slide
+                width: 20%
+                text-align: center
+                span
+                    color: #485055
+                    font-family: Montserrat
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 18px
+                img
+                    width: 100%
+                    margin-bottom: 24px
+    .swiper-navigation
+        .swiper-button-prev, .swiper-button-next
+            position: absolute
+            top: 50%
+            background: none
+            width: 41px
+            height: 41px
+            svg
+                width: 100%
+                height: 100%
+.footer-line
+    bottom: 72px
+    position: absolute
+    display: block
+    width: 100%
+    height: 2px
+    background-color: #C7CDD0
+    opacity: 0.3
