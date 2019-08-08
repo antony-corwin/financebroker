@@ -97,6 +97,191 @@
                 background: #fff
             &:first-child
                 margin-left: 0
+.credit
+    .container
+        span.title
+            display: inline-block
+            width: 623px
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 500
+            font-size: 40px
+            color: #485055
+            margin-top: 150px
+            margin-bottom: 70px
+    &-row
+        display: flex-inline
+        .title
+            // display: flex-inline
+            // align-items: center
+            font-family: Montserrat
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            color: #485055
+        label
+            display: inline-flex
+            justify-content: space-between
+            align-items: center
+            width: 230px
+            height: 40px
+            border: 2px solid #C7CDD0
+            padding-left: 16px
+            padding-right: 16px
+            margin-top: 8px
+            margin-bottom: 30px
+            input
+                width: 100%
+                font-family: Montserrat
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                background: transparent
+                padding-right: 5px
+            span
+                font-family: Montserrat
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+        input.line
+            width: 527px
+            background: #FCFCFD
+            border-bottom: 2px solid #C7CDD0
+        select.line
+            width: 527px
+            background: #FCFCFD
+            border-style: none
+            border-bottom: 2px solid #C7CDD0
+        span.important
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 500
+            font-size: 12px
+            color: #485055
+            opacity: 0.4
+        span.name
+            display: inline-block
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            opacity: 0.5
+            margin-top: 70px
+        input.checkbox
+            background: url("../img/pages/svg/unchecked.svg") no-repeat
+            appearance: none
+            width: 16px
+            height: 16px
+            cursor: pointer
+            position: relative
+            ouutline: 0
+            margin-right: 16px
+            &:focus
+                ouutline: 0
+            &:checked
+                background: url("../img/pages/svg/checked.svg") no-repeat
+        .checkbox-text
+                font-family: Montserrat
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                color: #485055
+                opacity: 0.5
+        .slidecontainer
+            width: 50%
+            margin-right: 10px
+            margin-left: 10px
+            display: inline-flex
+            justify-content: space-between
+            align-items: center
+            .slider-control
+                width: 70%
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+        .slider
+            width: 100%
+            margin-top: 30px
+            margin-bottom: 4px
+            height: 2px
+            background: #d3d3d3
+            border: none
+            border-radius: 2px
+            &.noUi-target
+                padding-left: 15px
+                padding-right: 15px
+            .noUi-handle
+                top: 50%
+                transform: translateY(-50%)
+                background: #FBFBFC
+                width: 32px
+                height: 32px
+                border: none
+                box-shadow: none
+                &::before, &::after
+                    display: none
+            .noUi-base
+                &::before
+                    content: ""
+                    display: inline-block
+                    position: absolute
+                    left: -15px
+                    height: 100%
+                    background: #3fb8af
+                    width: 15px
+                    border-top-left-radius: 2px
+                    border-bottom-left-radius: 2px
+                    overflow: hidden
+            .noUi-handle
+                background: url('../img/pages/svg/slider.svg')
+        button
+            width: 24px
+            height: 24px
+            margin-top: 10px
+            padding-right: 12px
+            padding-left: 12px
+            &.decrement
+                background: url('../img/pages/svg/decrement_inactive.svg')
+                &:hover
+                    background: url('../img/pages/svg/decrement_active.svg')
+            &.increment
+                background: url('../img/pages/svg/increment_inactive.svg')
+                &:hover
+                    background: url('../img/pages/svg/increment_active.svg')
+        .min-max
+            display: flex
+            justify-content: space-between
+            font-family: Montserrat
+            font-style: normal
+            margin-top: 5px
+            font-weight: 500
+            font-size: 12px
+            color: #485055
+            opacity: 0.5
+        .inputcontainer
+            span.name
+                font-family: Montserrat
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                color: #485055
+                opacity: 0.5
+                margin-top: 0
+            margin-top: 100px
+            height: 40px
+        .btn-default
+            float: right
+        .iti__flag 
+            background-image: url("../../../img/pages/elems/flags.png")
+        .tel
+            font-family: Montserrat
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            color: #485055
+            width: 527px
+            background: #FCFCFD
+            border-bottom: 2px solid #c7cdd0
 .partners
     padding-top: 150px
     padding-bottom: 150px
@@ -276,12 +461,12 @@
                     color: #009c93
             &:first-child
                 margin-right: 86px
-        .line
+        input.line
             top: 75px
             position: absolute
             display: block
             width: 625px
-            height: 1px
+            height: 40px
             background-color: #C7CDD0
 
         &__item

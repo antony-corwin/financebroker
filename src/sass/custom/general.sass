@@ -175,6 +175,11 @@ body
   @include vwplusem('margin-left', -10)
   @include vwplusem('margin-right', -10)
 
+.row-mg
+  @include clearfix()
+  @include vwplusem('margin-left', -50)
+  @include vwplusem('margin-right', -50)
+
 .row:after, .row-before
   display: table
   content: ""
@@ -206,6 +211,12 @@ body
   float: left
   @include vwplusem('padding-left', 10)
   @include vwplusem('padding-right', 10)
+
+.col-mg-6
+  width: 50%
+  float: left
+  @include vwplusem('padding-left', 50)
+  @include vwplusem('padding-right', 50)
 
 //Main text blocks=====================================================================================================>
 // h2

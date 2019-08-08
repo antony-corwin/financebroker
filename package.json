@@ -9,7 +9,9 @@
   "author": "Znenia",
   "license": "ISC",
   "dependencies": {
-    "gulp-if": "^3.0.0"
+    "gulp-if": "^3.0.0",
+    "intl-tel-input": "^16.0.2",
+    "rangeslider.js": "^2.3.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
