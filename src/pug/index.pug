@@ -25,71 +25,80 @@ html(lang="ru")
           .description *Мы предлагаем до 10 решений на 1 заявку
     section.credit
       .container
-        span.title Для получения кредита заполните простую форму:
-        .row-mg
-          .col-mg-6
-            .credit-row
-              .title Сумма кредита
-              br
-              .thumb-range
-                label
-                  input(type="text", placeholder="10 000")
-                  span грн
-                .slidecontainer
-                  button.decrement
-                  .slider-control
-                    .slider#sum
-                    .min-max
-                      span(id="min") 1000
-                      span(id="max") 500 000
-                  button.increment
-            .credit-row  
-              .title Ежемесячный платеж*
-              br
-              label
-                input(type="text", placeholder="2 500")
-                span мес
-              span.important *Важно! Указанный ежемесячный платеж является ориентировочным
-              .inputcontainer
-                span.name Имя
-                input(type="text").line
-              .inputcontainer
-                input(type="tel", class="tel")#phone
-              .checkboxcontainer
-                input(type="checkbox", checked).checkbox
-                span.checkbox-text Согласие на обработку персональных данных
-              .checkboxcontainer
-                input(type="checkbox", checked).checkbox
-                span.checkbox-text Я не робот
-          .col-mg-6
-            .credit-row   
-              .title Период
-              br
-              .thumb-range
-                label
-                  input(type="text", placeholder="12")
-                  span грн
-                .slidecontainer
-                  button.decrement
-                  .slider-control
-                    .slider#period
-                    .min-max
-                      span(id="min") 6
-                      span(id="max") 48
-                  button.increment
-                .inputcontainer
-                  input(type="text", placeholder="ИНН").line
-                .inputcontainer
-                  select.line(name="work", placeholder="")
-                    option Трудоустройство
-                    option Безработный
-                    option Студент
-                    option Официально 
-                    option Не официально
-                a(href="#").btn-default
-                  include ../img/pages/svg/union.svg
-                  span Получить деньги
-                      a(href="#")
+        .main-title Для получения кредита заполните простую форму:
+        form
+          .row-mg
+            .col-mg-6
+              .credit-row
+                .title Сумма кредита
+                .thumb-range
+                  label
+                    input(type="text", placeholder="10 000")
+                    span грн
+                  .slidecontainer
+                    button.decrement
+                    .slider-control
+                      .slider#sum
+                      .min-max
+                        span(id="min") 1000
+                        span(id="max") 500 000
+                    button.increment
+              .credit-row
+                .title Ежемесячный платеж*
+                .thumb-range
+                  label
+                    input(type="text", placeholder="2 500")
+                    span мес
+                .important *Важно! Указанный ежемесячный платеж является ориентировочным
+            .col-mg-6
+              .credit-row   
+                .title Период
+                .thumb-range
+                  label
+                    input(type="text", placeholder="12")
+                    span грн
+                  .slidecontainer
+                    button.decrement
+                    .slider-control
+                      .slider#period
+                      .min-max
+                        span(id="min") 6
+                        span(id="max") 48
+                    button.increment
+          .row-mg
+            .col-mg-6
+              label.custom-input
+                input(type="text")
+                span Имя
+              label.custom-input
+                input(type="tel", placeholder="+38 (___) ___-__-__").tel
+                //- span Телефон
+            .col-mg-6
+              label.custom-input
+                input(type="text")
+                span ИНН
+              label.custom-input
+                select.line(name="work", placeholder="")
+                  option Трудоустройство
+                  option Безработный
+                  option Студент
+                  option Официально 
+                  option Не официально
+          .row-mg
+            .col-mg-6
+              label.custom-checkbox
+                input(type="checkbox", checked)
+                i
+                span Согласие на обработку персональных данных
+              label.custom-checkbox
+                input(type="checkbox", checked)
+                i
+                span Я не робот
+            .col-mg-6
+              a(href="#").btn-default
+                include ../img/pages/svg/union.svg
+                span Получить деньги
+                    a(href="#")
     section.partners
       .container
         .partners-info

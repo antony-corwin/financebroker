@@ -19,7 +19,7 @@
 $main-font: 'Roboto', sans-serif
 $font-alt:  'Bebas Neue', serif
 
-@mixin vwplusem($selector, $pixels, $font: 10px, $vpWidth: 1400px)
+@mixin vwplusem($selector, $pixels, $font: 10px, $vpWidth: 1600px)
   @if($vpWidth >= 1400px)
     #{$selector} : em($pixels, $font)
     @media (max-width: 1400px)
@@ -167,6 +167,7 @@ body
 
 //=========================================================================================== 
 .container
+  overflow: hidden
   @include vwplusem('max-width', 1155)
   margin: 0 auto
 

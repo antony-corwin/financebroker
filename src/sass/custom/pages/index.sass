@@ -1,7 +1,8 @@
 //.index
 
 .main
-    height: 100vh   
+    height: 100vh
+    min-height: 800px 
     background-image: url(../../../img/pages/example/bg-main.png)
     background-size: cover
     background-position: center
@@ -97,23 +98,86 @@
                 background: #fff
             &:first-child
                 margin-left: 0
-.credit
-    .container
-        span.title
-            display: inline-block
-            width: 623px
-            font-family: Montserrat
-            font-style: normal
-            font-weight: 500
-            font-size: 40px
+
+//======================================
+.custom-input
+    position: relative
+    border-bottom: 2px solid #009C93
+    padding-bottom: 8px
+    display: block
+    margin-top: 70px
+    margin-bottom: 70px
+    span
+        font-family: Montserrat
+        font-size: 18px
+        position: absolute
+        bottom: 8px
+        left: 0
+        z-index: -1
+        transition: .4s
+    select
+        font-family: Montserrat
+        font-size: 18px
+        width: 100%
+        background: transparent
+        border: none
+    input 
+        font-family: Montserrat
+        font-size: 18px
+        width: 100%
+        background: transparent
+        &.tel
+            letter-spacing: 2px
+        &.filed + span
+            bottom: 100%
+            font-size: 14px
             color: #485055
-            margin-top: 150px
-            margin-bottom: 70px
+            opacity: 0.5
+.custom-checkbox
+    display: block
+    position: relative
+    padding-left: 30px
+    margin-bottom: 16px
+    i
+        width: 16px
+        height: 16px
+        border: 1px solid #C7CDD0
+        display: inline-block
+        position: absolute
+        left: 0
+    span
+        color: #485055
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        cursor: pointer
+    input
+        display: none
+        &:checked
+            & ~ i
+                background-size: 100% 100%
+                background-image: url("../img/pages/svg/checked.svg")
+            & ~ span
+                opacity: 0.5
+.thumb-range
+    display: flex
+//======================================
+.credit
+    .main-title
+        display: inline-block
+        width: 623px
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 500
+        font-size: 40px
+        color: #485055
+        margin-top: 150px
+        margin-bottom: 70px
     &-row
         display: flex-inline
+        margin-bottom: 30px
         .title
-            // display: flex-inline
-            // align-items: center
             font-family: Montserrat
             font-style: normal
             font-weight: normal
@@ -129,7 +193,7 @@
             padding-left: 16px
             padding-right: 16px
             margin-top: 8px
-            margin-bottom: 30px
+            margin-bottom: 8px
             input
                 width: 100%
                 font-family: Montserrat
@@ -143,16 +207,7 @@
                 font-style: normal
                 font-weight: normal
                 font-size: 18px
-        input.line
-            width: 527px
-            background: #FCFCFD
-            border-bottom: 2px solid #C7CDD0
-        select.line
-            width: 527px
-            background: #FCFCFD
-            border-style: none
-            border-bottom: 2px solid #C7CDD0
-        span.important
+        .important
             font-family: Montserrat
             font-style: normal
             font-weight: 500
@@ -167,26 +222,6 @@
             font-size: 14px
             opacity: 0.5
             margin-top: 70px
-        input.checkbox
-            background: url("../img/pages/svg/unchecked.svg") no-repeat
-            appearance: none
-            width: 16px
-            height: 16px
-            cursor: pointer
-            position: relative
-            ouutline: 0
-            margin-right: 16px
-            &:focus
-                ouutline: 0
-            &:checked
-                background: url("../img/pages/svg/checked.svg") no-repeat
-        .checkbox-text
-                font-family: Montserrat
-                font-style: normal
-                font-weight: 500
-                font-size: 14px
-                color: #485055
-                opacity: 0.5
         .slidecontainer
             width: 50%
             margin-right: 10px
@@ -238,8 +273,6 @@
             width: 24px
             height: 24px
             margin-top: 10px
-            padding-right: 12px
-            padding-left: 12px
             &.decrement
                 background: url('../img/pages/svg/decrement_inactive.svg')
                 &:hover
@@ -258,30 +291,6 @@
             font-size: 12px
             color: #485055
             opacity: 0.5
-        .inputcontainer
-            span.name
-                font-family: Montserrat
-                font-style: normal
-                font-weight: 500
-                font-size: 14px
-                color: #485055
-                opacity: 0.5
-                margin-top: 0
-            margin-top: 100px
-            height: 40px
-        .btn-default
-            float: right
-        .iti__flag 
-            background-image: url("../../../img/pages/elems/flags.png")
-        .tel
-            font-family: Montserrat
-            font-style: normal
-            font-weight: normal
-            font-size: 18px
-            color: #485055
-            width: 527px
-            background: #FCFCFD
-            border-bottom: 2px solid #c7cdd0
 .partners
     padding-top: 150px
     padding-bottom: 150px

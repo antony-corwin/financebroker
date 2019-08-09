@@ -6,6 +6,7 @@ $(document).ready(() => {
     constructor() {
       svg4everybody();
       //========================================
+      $('.tel').mask("+38 (999) 999-99-99");
     }
   }
 
@@ -26,6 +27,7 @@ $(document).ready(() => {
         }
       });
     }
+
     static initSlider() {
       var sumConfig = {
         step: 10000,
@@ -73,19 +75,14 @@ $(document).ready(() => {
       updateRange(periodSlider, periodConfig);
     }
 
-    static initTelInput() {
-      var input = document.querySelector("#phone");
-      window.intlTelInput(input, {
-        initialCountry: "auto",
-        geoIpLookup: function(callback) {
-          $.get("https://ipinfo.io", function() {}, "jsonp").always(function(
-            resp
-          ) {
-            var countryCode = resp && resp.country ? resp.country : "";
-            callback(countryCode);
-          });
-        },
-        utilsScript: "../vendor/utils.js?1562189064761" // just for formatting/placeholders etc
+    static initInput() {
+      $('.custom-input').on('focus', 'input[type="text"]', function(){
+        $(this).addClass('filed');
+      });
+      $('.custom-input').on('blur', 'input[type="text"]', function(){
+        if(!this.value) {
+          $(this).removeClass('filed');
+        }  
       });
     }
   }
@@ -192,6 +189,7 @@ $(document).ready(() => {
   // init class MainPage for function
   MainPage.initSwiper();
   MainPage.initSlider();
+  MainPage.initInput();
 
   // init class CommonElements
   new CommonElements();
