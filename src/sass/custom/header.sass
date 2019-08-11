@@ -21,11 +21,37 @@
         li
             padding-right: 25px
             padding-left: 25px
+            
             a
                 font-family: Montserrat
                 font-style: normal
                 font-weight: normal
                 font-size: 18px
+                &:hover
+                    color: #485055
+    .menu2
+        display: flex
+        align-items: center
+        height: 48px
+        li
+            padding-right: 25px
+            padding-left: 25px
+            display: block
+            a
+                font-family: Montserrat
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                &:hover
+                    color: #485055
+                &.selected
+                    width: 240px
+                    height: 48px
+                    background-color: #ffffff
+                    color: #485055
+                    text-align: center
+                    vertical-align: center
+                    line-height: 48
     .language
         display: flex
         li
@@ -35,6 +61,8 @@
                 font-style: normal
                 font-size: 18px
                 color: #fff
+                &:hover
+                    color: #485055
             &.active
                 a
                     font-weight: bold
