@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-    <g fill="none" fill-rule="evenodd" transform="matrix(-1 0 0 1 50 0)">
-        <rect width="49" height="49" x=".5" y=".5" stroke="#BDC8E7" rx="24.5"/>
-        <g fill="#BDC8E7">
-            <path fill-rule="nonzero" stroke="#BDC8E7" stroke-width=".5" d="M27.092 17.91a.695.695 0 0 1 .98.196l4.081 6.354a1 1 0 0 1 0 1.08l-4.08 6.354a.695.695 0 0 1-.981.196.745.745 0 0 1-.203-1.015L30.79 25l-3.901-6.075a.745.745 0 0 1 .203-1.015z"/>
-            <path d="M19 24h12v2H19a1 1 0 1 1 0-2z"/>
-        </g>
-    </g>
-</svg>
