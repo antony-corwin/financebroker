@@ -1,6 +1,6 @@
 .idea
 node_modules
-build
+# build
 
 
 src/img/pages/example/5893868.mov
