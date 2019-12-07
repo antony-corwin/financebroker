@@ -1,1 +1,213 @@
 // @media screen and (max-width: 660px)
+
+@media screen and (max-width: 660px)
+  ul
+    flex-wrap: wrap
+
+  // SECTIONS
+  .credit
+    margin-top: 40px
+    &-row
+      margin: 0
+      padding-bottom: 40px
+    .main-title
+      margin-top: 0
+      margin-bottom: 24px
+      font-size: 25px
+  .custom-input
+    margin-top: 40px
+    
+  .btn-default
+    width: 100%
+    
+  .capabilities
+    padding-top: 40px
+    padding-bottom: 120px
+    position: relative
+    &-info
+      width: 100%
+    &-nav
+      @include vwplusem('max-width', 1360)
+      position: absolute
+      bottom: 30px
+      left: 0
+      right: 0
+      margin: 0 auto
+    &-description__row
+      flex-wrap: wrap
+    &-description__item
+      margin: 20px 0
+    .container
+      flex-wrap: wrap
+  .containder
+    max-width: 90%
+    display: flex
+    flex-wrap: wrap
+
+  .credit-row
+    width: 100%
+    label
+      width: 100%
+    .slidecontainer
+      width: 100%
+      margin: 0
+    .min-max
+      margin-top: 8px
+
+  .partners
+    padding-top: 40px
+    padding-bottom: 20px
+    .container
+      flex-wrap: wrap
+    &-logos
+      padding-top: 20px
+      padding-bottom: 20px
+      &__item
+        flex-wrap: wrap
+        margin: 5px
+        .image
+          @include vwplusemmb('width', 160)
+          img
+            width: 100%
+    &-info
+      h2
+        font-size: 25px
+      p
+        padding-top: 10px
+        font-size: 18px  
+
+  .steps
+    .swiper-slide
+      width: 100%
+      padding-left: 0
+      padding-right: 0
+      .image
+        background-position-x: 65%;
+    .container
+      p
+        font-size: 30px
+    .swiper-pagination
+      max-width: 100%
+      left: 20px
+      bottom: 24px
+
+  .terms
+    padding: 40px 0
+    width: 100%
+    .container
+      flex-wrap: wrap
+      width: 100%
+    &-info
+      h2
+        font-size: 25px
+    &-description
+      width: 100%
+      &-row
+        flex-wrap: wrap
+        width: 100%
+      &-col
+        &:first-child
+          margin: 0
+        span
+          font-weight: 600
+          font-size: 18px
+          margin: 16px 0
+
+  .example
+    .container
+      display: block
+    &-info
+      max-width: 100%
+      margin: 0
+      h2
+        font-size: 32px
+    &-description
+      margin-top: 24px
+      &-container
+        flex-wrap: wrap
+      &__col
+        width: 100%
+        &:first-child
+          margin: 0
+        span
+          &.bold__green
+            margin: 0
+          &.bold__big
+            margin-bottom: 20px
+
+  .licenses
+    padding: 40px 0
+    .container
+      max-width: 100%
+      h2
+        font-size: 25px
+        padding: 0 25px
+    &-wrap
+      padding: 0
+      padding-bottom: 80px
+      margin-top: 24px
+    .swiper-container
+      padding: 0 25px
+      .swiper-wrapper
+        .swiper-slide 
+          width: 80%
+    .swiper-navigation
+      position: absolute
+      bottom: 0
+      left: 0
+      display: flex
+      justify-content: center
+      width: 100%
+      .swiper-button-prev, .swiper-button-next
+        top: 0
+        position: static
+        margin-right: 10px
+        margin-left: 10px
+
+  .thumb-range
+    width: 100%
+
+  .btn-default-2
+    width: 100%
+    display: flex
+    justify-content: center
+  .btn-burger
+    display: block
+    z-index: 100
+    width: 35px
+    height: 20px
+    position: absolute
+    top: 20px
+    right: 20px
+
+    span
+      background: #ffffff
+      display: block
+      position: absolute
+      width: 100%
+      height: 3px
+      transition: .4s
+      &:first-child
+        top: 0px
+        left: 0px
+      &:last-child
+        bottom: 0px
+        left: 0px  
+
+  .btn-default
+    justify-content: center
+
+  .col-sm-0
+    display: none
+  .col-sm-3
+    width: 25%
+  .col-sm-4
+    width: 33.3333%
+  .col-sm-6
+    width: 50%
+  .col-sm-12
+    width: 100%
+
+  .swiper-pagination-bullet
+    width: 16px
+    height: 16px

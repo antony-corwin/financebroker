@@ -7,6 +7,13 @@ $(document).ready(() => {
       svg4everybody();
       //========================================
       $('.tel').mask("+38 (999) 999-99-99");
+
+      $(".btn-burger").click(function () {
+        console.log("button click");
+        $('.header').hasClass('opened') ?
+          $(".header").removeClass("opened") :
+          $(".header").addClass("opened");
+      } )
     }
   }
 
@@ -16,6 +23,11 @@ $(document).ready(() => {
         slidesPerView: "auto",
         pagination: {
           el: ".steps .swiper-pagination"
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1
+          }
         }
       });
       new Swiper(".licenses .swiper-container", {
@@ -24,6 +36,12 @@ $(document).ready(() => {
         navigation: {
           nextEl: `.licenses .swiper-button-next`,
           prevEl: `.licenses .swiper-button-prev`
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: "auto",
+            spaceBetween: 0,
+          }
         }
       });
     }

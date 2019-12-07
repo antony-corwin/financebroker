@@ -31,10 +31,10 @@ html(lang="ru")
           .description *Мы предлагаем до 10 решений на 1 заявку
     section.credit
       .container
-        .main-title Для получения кредита заполните простую форму:
+        .main-title.col-sm-12 Для получения кредита заполните простую форму:
         form
           .row-mg
-            .col-mg-6
+            .col-mg-6.col-sm-12
               .credit-row
                 .title Сумма кредита
                 .thumb-range
@@ -56,14 +56,14 @@ html(lang="ru")
                     input(type="text", placeholder="2 500")
                     span мес
                 .important *Важно! Указанный ежемесячный платеж является ориентировочным
-            .col-mg-6
+            .col-mg-6.col-sm-12
               .credit-row   
                 .title Период
                 .thumb-range
                   label
                     input(type="text", placeholder="12")
                     span мес
-                  .slidecontainer
+                  .slidecontainer.col-sm-12
                     .btn.decrement
                     .slider-control
                       .slider#period
@@ -72,13 +72,13 @@ html(lang="ru")
                         span(id="max") 48
                     .btn.increment
           .row-mg
-            .col-mg-6
+            .col-mg-6.col-sm-12
               label.custom-input
                 input(type="text")
                 span Имя
               label.custom-input
                 input(type="tel", placeholder="+38 (___) ___-__-__").tel
-            .col-mg-6
+            .col-mg-6.col-sm-12
               label.custom-input
                 input(type="text")
                 span ИНН
@@ -91,7 +91,7 @@ html(lang="ru")
                   option Официально 
                   option Не официально
           .row-mg
-            .col-mg-6
+            .col-mg-6.col-sm-12
               label.custom-checkbox
                 input(type="checkbox", checked)
                 i
@@ -100,7 +100,7 @@ html(lang="ru")
                 input(type="checkbox", checked)
                 i
                 span Я не робот
-            .col-mg-6
+            .col-mg-6.col-sm-12
               a(href="#").btn-default
                 include ../img/pages/svg/union.svg
                 span Получить деньги
@@ -163,9 +163,10 @@ html(lang="ru")
         .capabilities-info
           h2 Новые возможности для тебя
           p Комфортное решение в любой ситуации без лишних вопросов
-          a(href="#").btn-default
-            include ../img/pages/svg/union.svg
-            span Получить деньги
+          .capabilities-nav
+            a(href="#").btn-default
+              include ../img/pages/svg/union.svg
+              span Получить деньги
         .capabilities-description
           .capabilities-description__row
             .capabilities-description__item
@@ -194,44 +195,44 @@ html(lang="ru")
             .terms-description-col
               span Требования к заёмщикам
               ul
-                .terms-description__item
+                li.terms-description__item
                   include ../img/pages/svg/checked_green.svg
-                  li Гражданство Украины
-                .terms-description__item
+                  | Гражданство Украины
+                li.terms-description__item
                   include ../img/pages/svg/checked_green.svg
-                  li Возраст от 21 года до 70 лет
+                  | Возраст от 21 года до 70 лет
             .terms-description-col
               span Необходимые документы
               ul
-                .terms-description__item
+                li.terms-description__item
                   include ../img/pages/svg/checked_green.svg
-                  li Паспорт
-                .terms-description__item
+                  | Паспорт
+                li.terms-description__item
                   include ../img/pages/svg/checked_green.svg
-                  li Идентификационный номер
+                  | Идентификационный номер
           .terms-description-row
             .terms-description-col
               span Условия по кредиту:
               ul
-                .terms-description__item
+                li.terms-description__item
                   include ../img/pages/svg/checked_green.svg
-                  li Срок - 
+                  | Срок - 
                   .bold от 6 до 48 месяцев;
-                .terms-description__item
+                li.terms-description__item
                   include ../img/pages/svg/checked_green.svg
-                  li Сумма – 
+                  | Сумма – 
                   .bold от 1 000 до 500 000 грн;
-                .terms-description__item
+                li.terms-description__item
                   include ../img/pages/svg/checked_green.svg
-                  li Процентная ставка – 
+                  | Процентная ставка – 
                   .bold от 0,01% до 40%;
-                .terms-description__item
+                li.terms-description__item
                   include ../img/pages/svg/checked_green.svg
-                  li Комиссия за выдачу кредита - 
+                  | Комиссия за выдачу кредита - 
                   .bold от 0% до 5%;
-                .terms-description__item
+                li.terms-description__item
                   include ../img/pages/svg/checked_green.svg
-                  li Ежемесячная комиссия – 
+                  | Ежемесячная комиссия – 
                   .bold от 0% до 4,4%;
     section.example
       .container

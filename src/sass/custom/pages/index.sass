@@ -75,7 +75,7 @@
             color: #fff
         p
             margin-top: 15px
-            width: 436px
+            max-width: 436px
             font-family: Montserrat
             font-style: normal
             font-weight: normal
@@ -159,11 +159,12 @@
                 opacity: 0.5
 .thumb-range
     display: flex
+    flex-wrap: wrap
 //======================================
 .credit
     .main-title
         display: inline-block
-        width: 623px
+        max-width: 623px
         font-family: Montserrat
         font-style: normal
         font-weight: 500
@@ -351,17 +352,15 @@
                 margin-bottom: 16px
         &__item
             display: flex
-            align-items: center
-            margin-bottom: 8px
+            flex-wrap: wrap
+            margin-bottom: 8px  
+            font-family: Montserrat
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            color: #485055
             svg
                 margin-right: 10px
-            li
-                display: inline-block    
-                font-family: Montserrat
-                font-style: normal
-                font-weight: normal
-                font-size: 18px
-                color: #485055
             .bold
                 margin-left: 5px
                 font-family: Montserrat
@@ -423,7 +422,7 @@
     .container
         display: flex
     &-info
-        width: 496px
+        max-width: 496px
         margin-right: 32px
         h2 
             font-family: Montserrat
@@ -432,7 +431,7 @@
             font-size: 40px
             color: #485055
     &-description
-        width: 627px
+        max-width: 627px
         &-container
             display: flex
             flex-direction: row
@@ -441,7 +440,7 @@
             span
                 margin-bottom: 18px    
                 display: block
-                width: 274px
+                max-width: 274px
                 font-family: Montserrat
                 font-style: normal
                 font-weight: normal
