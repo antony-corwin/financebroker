@@ -157,12 +157,12 @@ $(document).ready(function() {
     new (function CommonElements() {
       _classCallCheck(this, CommonElements),
         svg4everybody(),
-        $('.tel').mask('+38 (999) 999-99-99')
-      $('.btn-burger').click(function() {
-        console.log('button click')
-        $('.header').hasClass('opened')
-          ? $('.header').removeClass('opened')
-          : $('.header').addClass('opened')
-      })
+        $('.tel').mask('+38 (999) 999-99-99'),
+        $('.btn-burger').click(function() {
+          console.log('button click')
+          $('.header').hasClass('opened')
+            ? $('.header').removeClass('opened')
+            : $('.header').addClass('opened')
+        })
     })()
 })
